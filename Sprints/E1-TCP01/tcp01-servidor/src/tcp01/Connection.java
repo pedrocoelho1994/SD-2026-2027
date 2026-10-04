@@ -4,15 +4,16 @@ import java.io.*;
 import java.net.*;
 
 public class Connection extends Thread {
-    DataInputStream in;
-    DataOutputStream out;
+    ObjectInputStream in;                                               // ALTERADO: era DataInputStream
+    ObjectOutputStream out;                                             // ALTERADO: era DataOutputStream
     Socket clientSocket;
 
     public Connection(Socket aClientSocket) {
         try {
             clientSocket = aClientSocket;
-            in = new DataInputStream(clientSocket.getInputStream());        // não bloqueia
-            out = new DataOutputStream(clientSocket.getOutputStream());     //não bloqueia
+            out = new ObjectOutputStream(clientSocket.getOutputStream()); // ALTERADO: o output é criado primeiro / não bloqueia
+            out.flush();                                                // NOVO: envia o cabeçalho antes de criar o input / não bloqueia
+            in = new ObjectInputStream(clientSocket.getInputStream());  // ALTERADO: BLOQUEIA até chegar o cabeçalho do cliente
             this.start();                                       // executa run() numa thread separada / não bloqueia
         } catch (IOException e) {
             System.out.println("Connection: " + e.getMessage());
@@ -22,9 +23,14 @@ public class Connection extends Thread {
     @Override
     public void run() {
         try {
-            String data = in.readUTF();                         // lê os dados do cliente / bloqueia - só esta thread
-            System.out.println("Received: " + data);            // EXTRA!!!!!! - mostra mensagem no servidor / não bloqueia
-            out.writeUTF(data);                                 // envia a resposta ao cliente / normalmente não bloqueia - copia para o buffer do TCP
+            Person p = (Person) in.readObject();
+        System.out.println("Received: " + p.getName());
+        out.writeUTF("Localidade: " + p.getPlace().getLocality());   // ALTERADO: era "Recebi a pessoa: " + p.getName() / normalmente não bloqueia - copia para o buffer do TCP
+            out.flush();                                        // NOVO: garante que a resposta é enviada
+        } catch (ClassNotFoundException e) {                    // NOVO: obrigatório, a classe Person não existe no servidor
+            System.out.println("Class: " + e.getMessage());
+        } catch (ClassCastException e) {                        // NOVO: o objeto recebido não é uma Person
+            System.out.println("Cast: " + e.getMessage());
         } catch (EOFException e) {
             System.out.println("EOF: " + e.getMessage());
         } catch (IOException e) {

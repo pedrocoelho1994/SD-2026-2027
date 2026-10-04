@@ -1,15 +1,16 @@
 package tcp01;
+
 import java.io.Serializable;
 
 public class Place implements Serializable {
     private static final long serialVersionUID = 1L;
-    private String name;
-    private String country;
+    private String postalCode;
+    private String locality;
 
-    public Place(String name, String country) {
-        this.name = name; this.country = country;
+    public Place(String postalCode, String locality) {
+        this.postalCode = postalCode;
+        this.locality = locality;
     }
-    public String getName() { return name; }
-    public String getCountry() { return country; }
-    @Override public String toString() { return name + " (" + country + ")"; }
+    public String getPostalCode() { return postalCode; }
+    public String getLocality() { return locality; }
 }
