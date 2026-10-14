@@ -1,0 +1,9 @@
+# Ficheiros compilados
+*.class
+**/out/
+
+# Históricos gerados durante os testes
+rep01-lider/lider.txt
+rep01-replica/replica-*.txt
+rep01-ipfs-lider/lider-ipfs.txt
+rep01-ipfs-replica/replica-ipfs-*.txt
