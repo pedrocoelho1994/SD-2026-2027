@@ -60,7 +60,7 @@ public class PartitionLeader {
                             return;
                         }
 
-                        // ▼▼▼ Parte B: verificar que o sensor pertence a esta partição ▼▼▼
+                        
                         int destino = partitioner.of(sensor);
                         if (destino != k) {
                             System.out.println("PARTIÇÃO ERRADA: " + sensor

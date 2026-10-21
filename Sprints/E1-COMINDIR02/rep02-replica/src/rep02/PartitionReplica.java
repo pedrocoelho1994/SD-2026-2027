@@ -108,12 +108,6 @@ public class PartitionReplica {
         }
     }
 
-    /**
-     * A regra de aplicação da COMINDIR01, generalizada:
-     *   - seq == último+1  → escreve e aplica a cascata de retidos
-     *   - seq <= último ou já retido → duplicado, ignora
-     *   - seq > último+1   → retém em memória
-     */
     static void processRecord(int k, SensorRecord r, RecordFile file,
                                long[] last, TreeMap<Long, SensorRecord> retidos)
             throws IOException {
