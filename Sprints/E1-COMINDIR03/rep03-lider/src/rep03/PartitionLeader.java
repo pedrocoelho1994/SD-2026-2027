@@ -6,7 +6,6 @@ import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Properties;
-import java.util.concurrent.atomic.AtomicLong;
 
 public class PartitionLeader {
     private static final Object LOCK = new Object();
@@ -16,7 +15,7 @@ public class PartitionLeader {
         int n = args.length > 1 ? Integer.parseInt(args[1]) : Integer.parseInt(RuntimeConfig.value(config, "partitions", "3"));
         Partitioner partitioner = new Partitioner(n);
         String endereco = args.length > 2 ? args[2] : RuntimeConfig.value(config, "leader.host", "127.0.0.1");
-        String api = args.length > 3 ? args[3] : RuntimeConfig.value(config, "leader.api", "http://127.0.0");
+        String api = args.length > 3 ? args[3] : RuntimeConfig.value(config, "leader.api", "http://127.0.0.1:5001/api/v0");
         
         ServerSocket server = null;
         final int k;
@@ -24,17 +23,16 @@ public class PartitionLeader {
         try {
             if (args.length > 0) {
                 k = Integer.parseInt(args[0]);
-                server = new ServerSocket(Wire.PORTO_BASE + k); // permite ter 3 particoes lideres em 3 portas
+                server = new ServerSocket(Wire.PORTO_BASE + k);
             } else {
                 int livre = -1;
                 ServerSocket s = null;
                 for (int i = 0; i < n && s == null; i++) {
                     try {
-                        s = new ServerSocket(Wire.PORTO_BASE + i); // porto livre: esta particao nao tem lider
+                        s = new ServerSocket(Wire.PORTO_BASE + i);
                         livre = i;
                     } catch (IOException e) {
                         // porto ocupado: ja ha lider desta particao
-                        // tenta a particao seguinte
                     }
                 }
                 if (s == null) {
@@ -46,10 +44,17 @@ public class PartitionLeader {
                 System.out.println("particao atribuida automaticamente: p" + k);
             }
 
-            final int porto = Wire.PORTO_BASE + k; // porto de recuperacao da particao k: 7000 + k
+            final int porto = Wire.PORTO_BASE + k;
             IpfsPubSub ps = new IpfsPubSub(api);
-            RecordFile file = new RecordFile("lider-p" + k + ".txt");
-            AtomicLong seq = new AtomicLong(file.lastSeq());
+            RecordFile file = new RecordFile("lider-p" + k + ".txt", n);
+
+            // Inicializacao dos relogios e do seq a partir do ultimo registo guardado
+            SensorRecord last = file.last();
+            final long[] seq = { last != null ? last.getSeq() : 0L };
+            final long[] lamport = { last != null ? last.getLamport() : 0L };
+            final VectorClock vector = last != null ? last.getVector() : new VectorClock(n);
+
+            System.out.println("Lider da particao p" + k + " iniciado. seq=" + seq[0] + " L=" + lamport[0] + " V=" + vector);
 
             // ENTRADA (PubSub, thread secundaria)
             Thread entrada = new Thread(() -> {
@@ -57,23 +62,41 @@ public class PartitionLeader {
                     ps.subscribe(Wire.topicIn(k), msg -> { 
                         try {
                             String[] f = msg.trim().split(";");
-                            if (f.length != 3 || !f[0].equals("IN") || f[1].isBlank()) {
+                            // formato: IN;<sensor>;<temperatura>;<L>;<V>
+                            if (f.length != 5 || !f[0].equals("IN") || f[1].isBlank()) {
                                 throw new IllegalArgumentException("IN mal formado");
                             }
-                            int pj = partitioner.of(f[1]);
+                            String sensor = f[1];
+                            int pj = partitioner.of(sensor);
                             if (pj != k) { // leitura de outra particao: nao e registada
-                                System.out.println("PARTICAO ERRADA: " + f[1] + " pertence a p" + pj);
+                                System.out.println("PARTICAO ERRADA: " + sensor + " pertence a p" + pj);
                                 return;
                             }
                             double temp = Double.parseDouble(f[2]);
+                            long lMsg = Long.parseLong(f[3]);
+                            VectorClock vMsg = VectorClock.parse(f[4], n);
+
                             SensorRecord r;
                             synchronized (LOCK) {
-                                r = SensorRecord.now(seq.incrementAndGet(), f[1], temp);
+                                // 1. Atualizacao de L pela regra de Lamport
+                                lamport[0] = Math.max(lamport[0], lMsg) + 1;
+                                // 2. Atualizacao de V pela regra vetorial
+                                vector.merge(vMsg);
+                                vector.tick(k);
+                                // 3. Atribuicao de seq
+                                seq[0]++;
+                                // 4. Verificacao de que V[k] == seq
+                                if (vector.get(k) != seq[0]) {
+                                    throw new IllegalStateException("V[" + k + "] (" + vector.get(k) + ") != seq (" + seq[0] + ")");
+                                }
+                                // 5. Criar registo e append
+                                r = SensorRecord.now(seq[0], sensor, temp, lamport[0], vector);
                                 file.append(r);
+                                System.out.println("EVENTO: seq=" + r.getSeq() + " L=" + r.getLamport() + " V=" + r.getVector());
                             }
                             ps.publish(Wire.topicData(k), Wire.reg(endereco, porto, r));
                         } catch (Exception e) {
-                            System.out.println("REJEITADO: " + msg);
+                            System.out.println("REJEITADO: " + msg + " (" + e.getMessage() + ")");
                         }
                     });
                 } catch (Exception e) {
@@ -119,7 +142,7 @@ public class PartitionLeader {
                     
                     long ultimo;
                     synchronized (LOCK) {
-                        ultimo = seq.get();
+                        ultimo = seq[0];
                     }
                     
                     long limite = Math.min(ate, ultimo);
@@ -135,7 +158,6 @@ public class PartitionLeader {
                 }
             }
         } finally {
-            // Garante ao compilador que se o bloco principal falhar ou terminar, o socket fecha.
             if (server != null && !server.isClosed()) {
                 server.close();
             }

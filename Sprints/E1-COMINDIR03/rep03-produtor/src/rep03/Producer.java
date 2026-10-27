@@ -61,7 +61,7 @@ public class Producer {
                                     ? sensorQuente(rand, s)
                                     : String.format("S%02d", rand.nextInt(s) + 1); // sensor aleaterio
                             double temp = Math.round((15.0 + 15.0 * rand.nextDouble()) * 10.0) / 10.0; // temperatura aleatoria entre 15 e 30
-                            publicar(pubsub, partitioner, contadores, sensor, temp);
+                            publicar(pubsub, partitioner, contadores, sensor, temp, n);
                             tFim = System.currentTimeMillis(); // instante da ultima publicacao
                         }
                         System.out.println("Rajada concluida: " + nLeituras + " leituras.");
@@ -88,19 +88,20 @@ public class Producer {
                     System.out.println("Temperatura invalida: " + p[1]);
                     continue;
                 }
-                publicar(pubsub, partitioner, contadores, p[0], temp); // publica IN no topico de entrada da particao do sensor
+                publicar(pubsub, partitioner, contadores, p[0], temp, n); // publica IN no topico de entrada da particao do sensor
             }
         } catch (Exception e) {
             System.out.println("Erro: " + e.getMessage());
         }
     }
 
-    // publica a leitura no topico de entrada da particao do sensor e assinala o destino
-    static void publicar(IpfsPubSub ps, Partitioner pt, int[] contadores, String sensor, double temp) throws Exception {
+    // publica a leitura no topico de entrada da particao do sensor com L=0 e V=(0..0)
+    static void publicar(IpfsPubSub ps, Partitioner pt, int[] contadores, String sensor, double temp, int n) throws Exception {
         int k = pt.of(sensor);
-        ps.publish(Wire.topicIn(k), Wire.in(sensor, temp));
+        VectorClock v = new VectorClock(n);
+        ps.publish(Wire.topicIn(k), Wire.in(sensor, temp, 0L, v));
         contadores[k]++;
-        System.out.println("Publicado: " + Wire.in(sensor, temp) + " -> p" + k);
+        System.out.println("Publicado: " + Wire.in(sensor, temp, 0L, v) + " -> p" + k);
     }
 
     // sensor de uma leitura de rajada-quente: 80 % vem de S01, o resto de S02 a S<s>
