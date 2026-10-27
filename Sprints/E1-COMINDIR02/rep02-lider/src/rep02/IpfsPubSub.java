@@ -41,9 +41,15 @@ public class IpfsPubSub {
                 .header("Content-Type", "multipart/form-data; boundary=" + boundary)
                 .POST(HttpRequest.BodyPublishers.ofString(body, StandardCharsets.UTF_8))
                 .build();
-        HttpResponse<String> resp = http.send(req, HttpResponse.BodyHandlers.ofString());
-        if (resp.statusCode() != 200) {
-            throw new IOException("pub falhou (" + resp.statusCode() + "): " + resp.body());
+        for (int tentativa = 1; tentativa <= 5; tentativa++) {
+            HttpResponse<String> resp = http.send(req, HttpResponse.BodyHandlers.ofString());
+            if (resp.statusCode() == 200) {
+                return;
+            }
+            if (resp.statusCode() != 500 || !resp.body().contains("validation ignored") || tentativa == 5) {
+                throw new IOException("pub falhou (" + resp.statusCode() + "): " + resp.body());
+            }
+            Thread.sleep(25L * tentativa);
         }
     }
 
