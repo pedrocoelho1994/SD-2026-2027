@@ -5,11 +5,12 @@ public final class Partitioner {
 
     public Partitioner(int n) {
         if (n < 1) {
-            throw new IllegalArgumentException("Número de partições inválidas: " + n);
+            throw new IllegalArgumentException("numero de particoes invalido: " + n);
         }
         this.n = n;
     }
 
+    
     public int of(String sensorId) {
         return Math.floorMod(sensorId.hashCode(), n);
     }

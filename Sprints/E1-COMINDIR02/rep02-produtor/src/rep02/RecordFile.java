@@ -2,7 +2,10 @@ package rep02;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 
 public class RecordFile {
     private final Path path;
@@ -11,14 +14,13 @@ public class RecordFile {
         this.path = Paths.get(fileName);
     }
 
-    // acrescenta uma linha ao fim do ficheiro (cria-o se não existir)
+    // acrescenta uma linha ao fim do ficheiro (cria-o se nao existir)
     public synchronized void append(SensorRecord r) throws IOException {
-        Files.writeString(path, r.toLine() + System.lineSeparator(),
-                StandardCharsets.UTF_8,
+        Files.writeString(path, r.toLine() + System.lineSeparator(), StandardCharsets.UTF_8,
                 StandardOpenOption.CREATE, StandardOpenOption.APPEND);
     }
 
-    // número de sequência do último registo guardado (0 se o ficheiro não existir)
+    // numero de sequencia do ultimo registo guardado (0 se o ficheiro nao existir)
     public synchronized long lastSeq() throws IOException {
         if (!Files.exists(path)) {
             return 0;
