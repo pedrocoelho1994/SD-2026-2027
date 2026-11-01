@@ -11,7 +11,6 @@ import java.nio.file.Paths;
 /** Interface de consola que publica leituras IN no tópico da sua partição. */
 public class Producer {
     static final String API = "http://127.0.0.1:5001/api/v0"; // API por omissao
-    private static final long RAJADA_DELAY_MS = 6; // for debug purposes, 0 otherwise
     private static HeartbeatMonitor[] monitors;
 
     /** Lê comandos, gera rajadas opcionais e termina com {@code sair}. */
@@ -107,9 +106,6 @@ public class Producer {
                             double temp = Math.round((15.0 + 15.0 * rand.nextDouble()) * 10.0) / 10.0; // temperatura aleatoria entre 15 e 30
                             publicar(pubsub, partitioner, contadores, sensor, temp);
                             tFim = System.currentTimeMillis(); // instante da ultima publicacao
-                            if (i + 1 < nLeituras) {
-                                Thread.sleep(RAJADA_DELAY_MS);
-                            }
                         }
                         System.out.println("Rajada concluida: " + nLeituras + " leituras.");
                         for (int k = 0; k < n; k++) {

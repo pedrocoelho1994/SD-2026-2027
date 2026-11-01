@@ -8,9 +8,11 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import java.time.LocalDateTime;
@@ -19,6 +21,10 @@ import java.time.ZoneId;
 /** Análise offline exigida pelos ensaios da COMINDIR04. */
 public final class HeartbeatCheck {
     private HeartbeatCheck() { }
+
+    private static final String REAL = "real";
+    private static final String FALSA = "falsa";
+    private static final String INICIAL = "inicial";
 
     private static final class Heartbeat {
         final long inc;
@@ -51,7 +57,7 @@ public final class HeartbeatCheck {
         final Map<String, String> fields;
 
         MonitorEvent(String source, String line) {
-            this.source = source;
+            this.source = source.replaceFirst("^monitor-", "").replaceFirst("\\.txt$", "");
             String[] fields = line.split(";", -1);
             if (fields.length < 3) throw new IllegalArgumentException("evento de monitor mal formado: " + line);
             instant = Long.parseLong(fields[0]);
@@ -91,7 +97,7 @@ public final class HeartbeatCheck {
         for (int k = 0; k < n; k++) appendPartitionReport(report, k, heartbeats.get(k), records.get(k));
 
         List<MonitorEvent> events = readMonitorEvents(root);
-        appendMonitorReport(report, events);
+        appendMonitorReport(report, events, heartbeats);
         appendLatencyReport(report, events, records);
         appendFailureReport(report, events, args.length == 3 ? root.resolve(args[2]) : null);
 
@@ -191,7 +197,8 @@ public final class HeartbeatCheck {
                     intervalMax));
         }
 
-        long batchBytes = values.stream().mapToLong(h -> h.bytes).sum();
+        // Só os lotes com registos: um lote vazio é um heartbeat puro e não transporta dados.
+        long batchBytes = values.stream().filter(h -> h.count > 0).mapToLong(h -> h.bytes).sum();
         double batchBytesPerRecord = totalRecords == 0 ? 0 : (double) batchBytes / totalRecords;
         double regBytesPerRecord = records == null || records.isEmpty() ? 0
                 : records.stream()
@@ -203,7 +210,8 @@ public final class HeartbeatCheck {
                 batchBytesPerRecord, regBytesPerRecord));
     }
 
-    private static void appendMonitorReport(StringBuilder report, List<MonitorEvent> events) {
+    private static void appendMonitorReport(StringBuilder report, List<MonitorEvent> events,
+                                            Map<Integer, List<Heartbeat>> heartbeats) {
         Map<String, Integer> counts = new HashMap<>();
         for (MonitorEvent event : events) counts.merge(event.event, 1, Integer::sum);
         report.append("Eventos:");
@@ -212,19 +220,26 @@ public final class HeartbeatCheck {
         }
         report.append('\n');
 
-        int falseCount = 0, realCount = 0;
+        Map<String, Integer> kinds = new HashMap<>();
         for (MonitorEvent event : events) {
             if (!"SUSPEITA".equals(event.event)) continue;
-            boolean falsa = hasSameIncarnationResume(event, events);
-            if (falsa) falseCount++; else realCount++;
-            report.append("  ").append(falsa ? "falsa" : "real")
+            String kind = classify(event, events);
+            kinds.merge(kind, 1, Integer::sum);
+            long lastPublished = heartbeats.getOrDefault(event.partition, List.of()).stream()
+                    .filter(h -> h.instant <= event.instant)
+                    .mapToLong(h -> h.instant).max().orElse(-1);
+            report.append("  ").append(kind)
                     .append(" p").append(event.partition)
                     .append(" participante=").append(event.source)
-                    .append(" silencio_ms=").append(event.fields.getOrDefault("silencio_ms", "?"))
+                    .append(" silencio_detetor_ms=").append(event.fields.getOrDefault("silencio_ms", "?"))
+                    .append(" silencio_desde_publicado_ms=")
+                    .append(lastPublished < 0 ? "?" : Long.toString(event.instant - lastPublished))
                     .append('\n');
         }
-        report.append("Suspeitas: reais=").append(realCount)
-                .append(" falsas=").append(falseCount).append('\n');
+        report.append("Suspeitas: reais=").append(kinds.getOrDefault(REAL, 0))
+                .append(" falsas=").append(kinds.getOrDefault(FALSA, 0))
+                .append(" antes_do_primeiro_heartbeat=").append(kinds.getOrDefault(INICIAL, 0))
+                .append('\n');
     }
 
     private static void appendLatencyReport(StringBuilder report, List<MonitorEvent> events,
@@ -249,25 +264,49 @@ public final class HeartbeatCheck {
     private static void appendFailureReport(StringBuilder report, List<MonitorEvent> events,
                                             Path failures) throws IOException {
         if (failures == null || !Files.exists(failures)) return;
+        Map<Integer, List<Long>> byPartition = new HashMap<>();
         for (String line : Files.readAllLines(failures, StandardCharsets.UTF_8)) {
-            if (line.isBlank()) continue;
-            String[] fields = line.split(";", -1);
+            String[] fields = line.trim().split(";", -1);
             if (fields.length != 2 || !fields[0].startsWith("p")) continue;
-            int partition = Integer.parseInt(fields[0].substring(1));
-            long failure = Long.parseLong(fields[1]);
-            for (MonitorEvent event : events) {
-                if ("SUSPEITA".equals(event.event) && event.partition == partition
-                        && event.instant >= failure && !hasSameIncarnationResume(event, events)) {
-                    report.append("falha p").append(partition).append(" participante: deteção_ms=")
-                            .append(event.instant - failure).append('\n');
+            byPartition.computeIfAbsent(Integer.parseInt(fields[0].substring(1)), k -> new ArrayList<>())
+                    .add(Long.parseLong(fields[1]));
+        }
+        List<Long> detections = new ArrayList<>();
+        for (Map.Entry<Integer, List<Long>> entry : byPartition.entrySet()) {
+            int partition = entry.getKey();
+            List<Long> instants = entry.getValue();
+            instants.sort(Comparator.naturalOrder());
+            for (int i = 0; i < instants.size(); i++) {
+                long failure = instants.get(i);
+                // Cada falha só conta a primeira suspeita de cada participante antes da falha seguinte.
+                long next = i + 1 < instants.size() ? instants.get(i + 1) : Long.MAX_VALUE;
+                Set<String> seen = new HashSet<>();
+                for (MonitorEvent event : events) {
+                    if ("SUSPEITA".equals(event.event) && event.partition == partition
+                            && event.instant >= failure && event.instant < next
+                            && REAL.equals(classify(event, events)) && seen.add(event.source)) {
+                        long detection = event.instant - failure;
+                        detections.add(detection);
+                        report.append("falha p").append(partition).append(" instante=").append(failure)
+                                .append(" participante=").append(event.source)
+                                .append(" deteção_ms=").append(detection).append('\n');
+                    }
                 }
             }
         }
+        if (!detections.isEmpty()) {
+            report.append(String.format(Locale.ROOT, "Tempo de deteção_ms: min=%d média=%.1f max=%d%n",
+                    detections.stream().mapToLong(Long::longValue).min().orElse(0),
+                    detections.stream().mapToLong(Long::longValue).average().orElse(0),
+                    detections.stream().mapToLong(Long::longValue).max().orElse(0)));
+        }
     }
 
-    /** Uma suspeita é falsa se houver RETOMA com o mesmo inc depois dela. */
-    private static boolean hasSameIncarnationResume(MonitorEvent suspicion,
-                                                     List<MonitorEvent> events) {
+    /**
+     * Falsa: a primeira RETOMA seguinte tem o mesmo inc. Real: não há RETOMA ou esta traz outro inc.
+     * Inicial: o participante ainda não tinha recebido nenhum heartbeat, logo não há líder a acusar.
+     */
+    private static String classify(MonitorEvent suspicion, List<MonitorEvent> events) {
         long incarnation = -1;
         for (MonitorEvent event : events) {
             if (!event.source.equals(suspicion.source) || event.partition != suspicion.partition) continue;
@@ -275,11 +314,11 @@ public final class HeartbeatCheck {
                 incarnation = parseLong(event.fields.get("inc"), -1);
             }
             if (event.instant > suspicion.instant && "RETOMA".equals(event.event)) {
-                long resumed = parseLong(event.fields.get("inc"), -2);
-                if (resumed == incarnation && resumed != -2) return true;
+                if (incarnation == -1) return INICIAL;
+                return parseLong(event.fields.get("inc"), -2) == incarnation ? FALSA : REAL;
             }
         }
-        return false;
+        return incarnation == -1 ? INICIAL : REAL;
     }
 
     private static long parseLong(String value, long fallback) {
