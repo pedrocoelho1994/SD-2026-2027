@@ -1,0 +1,13 @@
+replica 2 ligada a http://127.0.0.1:5001/api/v0 com as particoes 1,2 (perda=0.0, descartar=nenhum)
+particao 2: ultimo seq em ficheiro: 0
+particao 1: ultimo seq em ficheiro: 0
+MONITOR: SUSPEITA;p1;silencio_ms=15114
+MONITOR: SUSPEITA;p2;silencio_ms=15119
+MONITOR: RETOMA;p2;inc=1793557604599;hb=1
+MONITOR: RECEBIDO;p2;inc=1793557604599;hb=1;ultimoSeq=1;n=1;de=1;ate=1
+Aplicado: 1;S03;21.0;1793557635345;1;0,0,1
+MONITOR: RETOMA;p1;inc=1793557604778;hb=1
+MONITOR: RECEBIDO;p1;inc=1793557604778;hb=1;ultimoSeq=1;n=1;de=1;ate=1
+Aplicado: 1;S02;21.0;1793557635334;1;0,1,0
+MONITOR: SUSPEITA;p1;silencio_ms=15299
+MONITOR: SUSPEITA;p2;silencio_ms=15469

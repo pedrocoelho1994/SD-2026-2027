@@ -1,0 +1,487 @@
+Produtor pronto (API: http://127.0.0.1:5001/api/v0, 3 particoes).
+Formato: <sensor> <temperatura> | 'rajada <n> <s>' | 'rajada-quente <n> <s>' | 'sair'
+> MONITOR: RECEBIDO;p0;inc=1793558370018;hb=2;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=2;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=2;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=3;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=3;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=3;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=4;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=4;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=4;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=5;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=5;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=5;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=6;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=6;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=6;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=7;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=7;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=7;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=8;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=8;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=8;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=9;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=9;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=9;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=10;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=10;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=10;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=11;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=11;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=11;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=12;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=12;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=12;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=13;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=13;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=13;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=14;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=14;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=14;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=15;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=15;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=15;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=16;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=16;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=16;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=17;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=17;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=17;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=18;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=18;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=18;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=19;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=19;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=19;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=20;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=20;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=20;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=21;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=21;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=21;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=22;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=22;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=22;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=23;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=23;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=23;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=24;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=24;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=24;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=25;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=25;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=25;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=26;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=26;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=26;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=27;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=27;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=27;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=28;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=28;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=28;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=29;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=29;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=29;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=30;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=30;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=30;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=31;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=31;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=31;ultimoSeq=0;n=0;de=-1;ate=-1
+Publicado: IN;S05;15.3;0;0,0,0 -> p1
+Publicado: IN;S06;21.4;0;0,0,0 -> p2
+Publicado: IN;S04;24.0;0;0,0,0 -> p0
+Publicado: IN;S01;23.9;0;0,0,0 -> p0
+Publicado: IN;S01;21.8;0;0,0,0 -> p0
+Publicado: IN;S06;23.7;0;0,0,0 -> p2
+Publicado: IN;S06;19.9;0;0,0,0 -> p2
+Publicado: IN;S09;24.4;0;0,0,0 -> p2
+Publicado: IN;S07;25.7;0;0,0,0 -> p0
+Publicado: IN;S06;28.7;0;0,0,0 -> p2
+Publicado: IN;S03;19.1;0;0,0,0 -> p2
+Publicado: IN;S09;20.4;0;0,0,0 -> p2
+Publicado: IN;S05;19.5;0;0,0,0 -> p1
+Publicado: IN;S01;17.7;0;0,0,0 -> p0
+Publicado: IN;S04;16.3;0;0,0,0 -> p0
+Publicado: IN;S03;15.5;0;0,0,0 -> p2
+Publicado: IN;S02;29.4;0;0,0,0 -> p1
+Publicado: IN;S01;18.7;0;0,0,0 -> p0
+Publicado: IN;S07;22.3;0;0,0,0 -> p0
+Publicado: IN;S06;18.4;0;0,0,0 -> p2
+Publicado: IN;S02;27.9;0;0,0,0 -> p1
+Publicado: IN;S02;23.0;0;0,0,0 -> p1
+Publicado: IN;S08;17.9;0;0,0,0 -> p1
+Publicado: IN;S02;25.5;0;0,0,0 -> p1
+Publicado: IN;S04;18.0;0;0,0,0 -> p0
+Publicado: IN;S08;24.5;0;0,0,0 -> p1
+Publicado: IN;S10;19.7;0;0,0,0 -> p0
+Publicado: IN;S09;17.6;0;0,0,0 -> p2
+Publicado: IN;S02;20.3;0;0,0,0 -> p1
+Publicado: IN;S08;22.1;0;0,0,0 -> p1
+Publicado: IN;S10;23.5;0;0,0,0 -> p0
+Publicado: IN;S08;23.3;0;0,0,0 -> p1
+Publicado: IN;S08;16.6;0;0,0,0 -> p1
+Publicado: IN;S04;20.9;0;0,0,0 -> p0
+Publicado: IN;S05;29.6;0;0,0,0 -> p1
+Publicado: IN;S04;25.0;0;0,0,0 -> p0
+Publicado: IN;S03;19.4;0;0,0,0 -> p2
+Publicado: IN;S09;25.9;0;0,0,0 -> p2
+Publicado: IN;S02;18.5;0;0,0,0 -> p1
+Publicado: IN;S03;29.8;0;0,0,0 -> p2
+Publicado: IN;S09;26.6;0;0,0,0 -> p2
+Publicado: IN;S06;16.6;0;0,0,0 -> p2
+Publicado: IN;S05;17.1;0;0,0,0 -> p1
+Publicado: IN;S06;29.3;0;0,0,0 -> p2
+Publicado: IN;S10;23.0;0;0,0,0 -> p0
+Publicado: IN;S03;29.6;0;0,0,0 -> p2
+Publicado: IN;S08;18.2;0;0,0,0 -> p1
+Publicado: IN;S01;25.5;0;0,0,0 -> p0
+Publicado: IN;S05;18.0;0;0,0,0 -> p1
+Publicado: IN;S04;26.5;0;0,0,0 -> p0
+Publicado: IN;S02;17.3;0;0,0,0 -> p1
+Publicado: IN;S03;29.7;0;0,0,0 -> p2
+Publicado: IN;S02;19.8;0;0,0,0 -> p1
+Publicado: IN;S05;23.3;0;0,0,0 -> p1
+Publicado: IN;S01;17.0;0;0,0,0 -> p0
+Publicado: IN;S05;20.7;0;0,0,0 -> p1
+Publicado: IN;S02;20.7;0;0,0,0 -> p1
+Publicado: IN;S08;22.3;0;0,0,0 -> p1
+Publicado: IN;S05;27.4;0;0,0,0 -> p1
+Publicado: IN;S02;28.3;0;0,0,0 -> p1
+Publicado: IN;S02;21.7;0;0,0,0 -> p1
+Publicado: IN;S01;22.3;0;0,0,0 -> p0
+Publicado: IN;S01;18.7;0;0,0,0 -> p0
+Publicado: IN;S09;27.9;0;0,0,0 -> p2
+Publicado: IN;S07;28.5;0;0,0,0 -> p0
+Publicado: IN;S09;26.3;0;0,0,0 -> p2
+Publicado: IN;S09;16.5;0;0,0,0 -> p2
+Publicado: IN;S05;20.3;0;0,0,0 -> p1
+Publicado: IN;S04;21.5;0;0,0,0 -> p0
+Publicado: IN;S03;18.1;0;0,0,0 -> p2
+Publicado: IN;S06;16.4;0;0,0,0 -> p2
+Publicado: IN;S06;17.4;0;0,0,0 -> p2
+Publicado: IN;S10;27.9;0;0,0,0 -> p0
+Publicado: IN;S09;28.9;0;0,0,0 -> p2
+Publicado: IN;S01;17.2;0;0,0,0 -> p0
+Publicado: IN;S04;30.0;0;0,0,0 -> p0
+Publicado: IN;S01;15.5;0;0,0,0 -> p0
+Publicado: IN;S01;29.7;0;0,0,0 -> p0
+Publicado: IN;S07;22.9;0;0,0,0 -> p0
+Publicado: IN;S01;22.5;0;0,0,0 -> p0
+Publicado: IN;S03;18.8;0;0,0,0 -> p2
+Publicado: IN;S08;24.8;0;0,0,0 -> p1
+Publicado: IN;S07;24.5;0;0,0,0 -> p0
+Publicado: IN;S10;17.5;0;0,0,0 -> p0
+Publicado: IN;S03;15.9;0;0,0,0 -> p2
+Publicado: IN;S05;19.1;0;0,0,0 -> p1
+Publicado: IN;S06;24.9;0;0,0,0 -> p2
+Publicado: IN;S07;19.7;0;0,0,0 -> p0
+Publicado: IN;S06;29.5;0;0,0,0 -> p2
+Publicado: IN;S02;23.7;0;0,0,0 -> p1
+Publicado: IN;S03;23.7;0;0,0,0 -> p2
+Publicado: IN;S03;29.6;0;0,0,0 -> p2
+Publicado: IN;S07;28.7;0;0,0,0 -> p0
+Publicado: IN;S06;24.3;0;0,0,0 -> p2
+Publicado: IN;S08;18.6;0;0,0,0 -> p1
+Publicado: IN;S02;17.8;0;0,0,0 -> p1
+Publicado: IN;S10;28.0;0;0,0,0 -> p0
+Publicado: IN;S06;16.5;0;0,0,0 -> p2
+Publicado: IN;S01;27.1;0;0,0,0 -> p0
+Publicado: IN;S08;23.6;0;0,0,0 -> p1
+Publicado: IN;S07;24.1;0;0,0,0 -> p0
+Publicado: IN;S06;24.7;0;0,0,0 -> p2
+Publicado: IN;S09;21.3;0;0,0,0 -> p2
+Publicado: IN;S05;27.1;0;0,0,0 -> p1
+Publicado: IN;S02;18.1;0;0,0,0 -> p1
+Publicado: IN;S07;20.8;0;0,0,0 -> p0
+Publicado: IN;S07;17.9;0;0,0,0 -> p0
+Publicado: IN;S04;19.8;0;0,0,0 -> p0
+Publicado: IN;S08;26.7;0;0,0,0 -> p1
+Publicado: IN;S06;24.5;0;0,0,0 -> p2
+Publicado: IN;S05;29.5;0;0,0,0 -> p1
+Publicado: IN;S04;15.1;0;0,0,0 -> p0
+Publicado: IN;S07;30.0;0;0,0,0 -> p0
+Publicado: IN;S05;16.5;0;0,0,0 -> p1
+Publicado: IN;S07;26.8;0;0,0,0 -> p0
+Publicado: IN;S07;29.0;0;0,0,0 -> p0
+Publicado: IN;S10;17.7;0;0,0,0 -> p0
+Publicado: IN;S06;29.5;0;0,0,0 -> p2
+Publicado: IN;S02;15.8;0;0,0,0 -> p1
+Publicado: IN;S01;20.3;0;0,0,0 -> p0
+Publicado: IN;S06;24.1;0;0,0,0 -> p2
+Publicado: IN;S04;18.0;0;0,0,0 -> p0
+Publicado: IN;S03;25.6;0;0,0,0 -> p2
+Publicado: IN;S08;22.2;0;0,0,0 -> p1
+Publicado: IN;S08;29.3;0;0,0,0 -> p1
+Publicado: IN;S04;19.7;0;0,0,0 -> p0
+Publicado: IN;S09;20.0;0;0,0,0 -> p2
+Publicado: IN;S03;16.1;0;0,0,0 -> p2
+Publicado: IN;S04;18.5;0;0,0,0 -> p0
+Publicado: IN;S02;18.9;0;0,0,0 -> p1
+Publicado: IN;S01;28.5;0;0,0,0 -> p0
+Publicado: IN;S07;26.9;0;0,0,0 -> p0
+Publicado: IN;S07;28.8;0;0,0,0 -> p0
+Publicado: IN;S03;26.3;0;0,0,0 -> p2
+Publicado: IN;S08;20.4;0;0,0,0 -> p1
+Publicado: IN;S04;20.2;0;0,0,0 -> p0
+Publicado: IN;S07;22.5;0;0,0,0 -> p0
+Publicado: IN;S09;18.4;0;0,0,0 -> p2
+Publicado: IN;S10;16.5;0;0,0,0 -> p0
+Publicado: IN;S06;25.4;0;0,0,0 -> p2
+Publicado: IN;S08;26.3;0;0,0,0 -> p1
+Publicado: IN;S04;22.6;0;0,0,0 -> p0
+Publicado: IN;S06;22.0;0;0,0,0 -> p2
+Publicado: IN;S09;28.6;0;0,0,0 -> p2
+Publicado: IN;S06;23.4;0;0,0,0 -> p2
+Publicado: IN;S05;21.6;0;0,0,0 -> p1
+Publicado: IN;S10;15.8;0;0,0,0 -> p0
+Publicado: IN;S05;20.9;0;0,0,0 -> p1
+Publicado: IN;S06;15.5;0;0,0,0 -> p2
+Publicado: IN;S03;28.9;0;0,0,0 -> p2
+Publicado: IN;S04;18.6;0;0,0,0 -> p0
+Publicado: IN;S04;29.7;0;0,0,0 -> p0
+Publicado: IN;S06;28.3;0;0,0,0 -> p2
+Publicado: IN;S03;27.6;0;0,0,0 -> p2
+Publicado: IN;S06;24.8;0;0,0,0 -> p2
+Publicado: IN;S08;24.1;0;0,0,0 -> p1
+Publicado: IN;S07;20.2;0;0,0,0 -> p0
+Publicado: IN;S01;20.5;0;0,0,0 -> p0
+Publicado: IN;S06;26.8;0;0,0,0 -> p2
+Publicado: IN;S10;27.8;0;0,0,0 -> p0
+Publicado: IN;S10;28.2;0;0,0,0 -> p0
+Publicado: IN;S08;27.8;0;0,0,0 -> p1
+Publicado: IN;S04;28.0;0;0,0,0 -> p0
+Publicado: IN;S04;25.7;0;0,0,0 -> p0
+Publicado: IN;S10;15.6;0;0,0,0 -> p0
+Publicado: IN;S02;22.9;0;0,0,0 -> p1
+Publicado: IN;S05;27.4;0;0,0,0 -> p1
+Publicado: IN;S10;26.4;0;0,0,0 -> p0
+Publicado: IN;S10;15.2;0;0,0,0 -> p0
+Publicado: IN;S02;18.2;0;0,0,0 -> p1
+Publicado: IN;S06;20.0;0;0,0,0 -> p2
+Publicado: IN;S04;29.4;0;0,0,0 -> p0
+Publicado: IN;S02;18.0;0;0,0,0 -> p1
+Publicado: IN;S01;19.0;0;0,0,0 -> p0
+Publicado: IN;S10;15.4;0;0,0,0 -> p0
+Publicado: IN;S06;27.5;0;0,0,0 -> p2
+Publicado: IN;S06;21.5;0;0,0,0 -> p2
+Publicado: IN;S10;20.4;0;0,0,0 -> p0
+Publicado: IN;S06;16.9;0;0,0,0 -> p2
+Publicado: IN;S06;24.6;0;0,0,0 -> p2
+Publicado: IN;S09;25.8;0;0,0,0 -> p2
+Publicado: IN;S03;24.8;0;0,0,0 -> p2
+Publicado: IN;S04;16.9;0;0,0,0 -> p0
+Publicado: IN;S09;29.0;0;0,0,0 -> p2
+Publicado: IN;S10;18.0;0;0,0,0 -> p0
+Publicado: IN;S09;20.7;0;0,0,0 -> p2
+Publicado: IN;S06;26.5;0;0,0,0 -> p2
+Publicado: IN;S03;28.0;0;0,0,0 -> p2
+Publicado: IN;S09;20.4;0;0,0,0 -> p2
+Publicado: IN;S09;16.6;0;0,0,0 -> p2
+Publicado: IN;S05;22.0;0;0,0,0 -> p1
+Publicado: IN;S10;16.1;0;0,0,0 -> p0
+Publicado: IN;S02;23.8;0;0,0,0 -> p1
+Publicado: IN;S03;23.0;0;0,0,0 -> p2
+Publicado: IN;S08;21.4;0;0,0,0 -> p1
+Publicado: IN;S02;27.9;0;0,0,0 -> p1
+Publicado: IN;S10;27.7;0;0,0,0 -> p0
+Publicado: IN;S01;29.3;0;0,0,0 -> p0
+Publicado: IN;S06;28.9;0;0,0,0 -> p2
+Publicado: IN;S02;22.5;0;0,0,0 -> p1
+Publicado: IN;S03;16.2;0;0,0,0 -> p2
+Publicado: IN;S08;23.7;0;0,0,0 -> p1
+Publicado: IN;S06;20.7;0;0,0,0 -> p2
+Publicado: IN;S04;22.6;0;0,0,0 -> p0
+Publicado: IN;S02;16.6;0;0,0,0 -> p1
+Publicado: IN;S05;21.3;0;0,0,0 -> p1
+Publicado: IN;S07;26.5;0;0,0,0 -> p0
+Publicado: IN;S09;25.1;0;0,0,0 -> p2
+Publicado: IN;S05;27.9;0;0,0,0 -> p1
+Publicado: IN;S01;24.0;0;0,0,0 -> p0
+Publicado: IN;S04;17.7;0;0,0,0 -> p0
+Publicado: IN;S04;20.1;0;0,0,0 -> p0
+Publicado: IN;S10;25.7;0;0,0,0 -> p0
+Publicado: IN;S08;19.7;0;0,0,0 -> p1
+Publicado: IN;S06;28.5;0;0,0,0 -> p2
+Publicado: IN;S06;27.3;0;0,0,0 -> p2
+Publicado: IN;S07;25.7;0;0,0,0 -> p0
+Publicado: IN;S05;16.9;0;0,0,0 -> p1
+Publicado: IN;S04;20.0;0;0,0,0 -> p0
+Publicado: IN;S03;18.7;0;0,0,0 -> p2
+Publicado: IN;S07;25.9;0;0,0,0 -> p0
+Publicado: IN;S02;15.7;0;0,0,0 -> p1
+Publicado: IN;S10;27.5;0;0,0,0 -> p0
+Publicado: IN;S04;16.4;0;0,0,0 -> p0
+Publicado: IN;S08;20.4;0;0,0,0 -> p1
+Publicado: IN;S04;22.5;0;0,0,0 -> p0
+Publicado: IN;S06;19.4;0;0,0,0 -> p2
+Publicado: IN;S08;25.1;0;0,0,0 -> p1
+Publicado: IN;S06;28.9;0;0,0,0 -> p2
+Publicado: IN;S10;22.4;0;0,0,0 -> p0
+Publicado: IN;S01;15.4;0;0,0,0 -> p0
+Publicado: IN;S03;16.2;0;0,0,0 -> p2
+Publicado: IN;S03;20.8;0;0,0,0 -> p2
+Publicado: IN;S04;15.6;0;0,0,0 -> p0
+Publicado: IN;S05;19.9;0;0,0,0 -> p1
+Publicado: IN;S02;22.8;0;0,0,0 -> p1
+Publicado: IN;S02;22.5;0;0,0,0 -> p1
+Publicado: IN;S02;19.2;0;0,0,0 -> p1
+Publicado: IN;S06;25.5;0;0,0,0 -> p2
+Publicado: IN;S07;28.7;0;0,0,0 -> p0
+Publicado: IN;S06;27.9;0;0,0,0 -> p2
+Publicado: IN;S07;23.7;0;0,0,0 -> p0
+Publicado: IN;S09;17.3;0;0,0,0 -> p2
+Publicado: IN;S05;24.0;0;0,0,0 -> p1
+Publicado: IN;S02;16.8;0;0,0,0 -> p1
+Publicado: IN;S04;26.8;0;0,0,0 -> p0
+Publicado: IN;S10;27.9;0;0,0,0 -> p0
+Publicado: IN;S05;15.4;0;0,0,0 -> p1
+Publicado: IN;S09;28.3;0;0,0,0 -> p2
+Publicado: IN;S02;18.2;0;0,0,0 -> p1
+Publicado: IN;S06;23.0;0;0,0,0 -> p2
+Publicado: IN;S03;29.4;0;0,0,0 -> p2
+Publicado: IN;S09;16.6;0;0,0,0 -> p2
+Publicado: IN;S09;24.6;0;0,0,0 -> p2
+Publicado: IN;S05;19.4;0;0,0,0 -> p1
+Publicado: IN;S05;22.6;0;0,0,0 -> p1
+Publicado: IN;S07;17.1;0;0,0,0 -> p0
+Publicado: IN;S07;25.2;0;0,0,0 -> p0
+Publicado: IN;S06;27.4;0;0,0,0 -> p2
+Publicado: IN;S10;22.1;0;0,0,0 -> p0
+Publicado: IN;S09;21.9;0;0,0,0 -> p2
+Publicado: IN;S09;16.3;0;0,0,0 -> p2
+Publicado: IN;S08;17.7;0;0,0,0 -> p1
+Publicado: IN;S01;26.4;0;0,0,0 -> p0
+Publicado: IN;S05;24.5;0;0,0,0 -> p1
+Publicado: IN;S07;28.8;0;0,0,0 -> p0
+Publicado: IN;S10;16.0;0;0,0,0 -> p0
+Publicado: IN;S03;24.0;0;0,0,0 -> p2
+Publicado: IN;S01;15.2;0;0,0,0 -> p0
+Publicado: IN;S03;27.4;0;0,0,0 -> p2
+Publicado: IN;S10;23.4;0;0,0,0 -> p0
+Publicado: IN;S07;21.8;0;0,0,0 -> p0
+Publicado: IN;S03;22.7;0;0,0,0 -> p2
+Publicado: IN;S06;23.6;0;0,0,0 -> p2
+Publicado: IN;S06;23.2;0;0,0,0 -> p2
+Publicado: IN;S10;22.2;0;0,0,0 -> p0
+Publicado: IN;S07;16.6;0;0,0,0 -> p0
+Publicado: IN;S10;28.4;0;0,0,0 -> p0
+Publicado: IN;S02;17.9;0;0,0,0 -> p1
+Publicado: IN;S10;23.1;0;0,0,0 -> p0
+Publicado: IN;S06;16.1;0;0,0,0 -> p2
+Publicado: IN;S04;27.4;0;0,0,0 -> p0
+Publicado: IN;S09;27.5;0;0,0,0 -> p2
+Publicado: IN;S03;18.6;0;0,0,0 -> p2
+Publicado: IN;S09;24.1;0;0,0,0 -> p2
+Publicado: IN;S02;22.4;0;0,0,0 -> p1
+Publicado: IN;S08;21.1;0;0,0,0 -> p1
+Publicado: IN;S04;26.5;0;0,0,0 -> p0
+Publicado: IN;S02;22.1;0;0,0,0 -> p1
+Publicado: IN;S01;17.5;0;0,0,0 -> p0
+Publicado: IN;S09;28.6;0;0,0,0 -> p2
+Publicado: IN;S08;28.6;0;0,0,0 -> p1
+Publicado: IN;S01;15.6;0;0,0,0 -> p0
+Publicado: IN;S02;15.6;0;0,0,0 -> p1
+Publicado: IN;S07;17.8;0;0,0,0 -> p0
+Publicado: IN;S09;27.6;0;0,0,0 -> p2
+Publicado: IN;S10;29.7;0;0,0,0 -> p0
+Publicado: IN;S10;28.2;0;0,0,0 -> p0
+Publicado: IN;S04;25.6;0;0,0,0 -> p0
+Publicado: IN;S02;17.2;0;0,0,0 -> p1
+Rajada concluida: 300 leituras.
+p0: 115 leituras
+p1: 85 leituras
+p2: 100 leituras
+Primeira: 1793558521528 ms | ultima: 1793558522283 ms | Duracao: 755 ms
+> MONITOR: RECEBIDO;p0;inc=1793558370018;hb=32;ultimoSeq=115;n=115;de=1;ate=115
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=32;ultimoSeq=85;n=85;de=1;ate=85
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=32;ultimoSeq=100;n=100;de=1;ate=100
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=33;ultimoSeq=135;n=20;de=116;ate=135
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=33;ultimoSeq=104;n=19;de=86;ate=104
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=33;ultimoSeq=106;n=6;de=101;ate=106
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=34;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=34;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=34;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=35;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=35;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=35;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=36;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=36;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=36;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=37;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=37;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=37;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=38;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=38;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=38;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=39;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=39;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=39;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=40;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=40;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=40;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=41;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=41;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=41;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=42;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=42;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=42;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=43;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=43;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=43;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=44;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=44;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=44;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=45;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=45;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=45;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=46;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=46;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=46;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=47;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=47;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=47;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=48;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=48;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=48;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=49;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=49;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=49;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=50;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=50;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=50;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=51;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=51;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=51;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=52;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=52;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=52;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=53;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=53;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=53;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=54;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=54;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=54;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=55;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=55;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=55;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=56;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=56;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=56;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=57;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=57;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=57;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=58;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=58;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=58;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=59;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=59;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=59;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=60;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=60;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=60;ultimoSeq=106;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558370018;hb=61;ultimoSeq=135;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558370022;hb=61;ultimoSeq=104;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558370078;hb=61;ultimoSeq=106;n=0;de=-1;ate=-1

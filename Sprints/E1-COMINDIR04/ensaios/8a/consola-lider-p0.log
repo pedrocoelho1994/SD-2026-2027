@@ -1,0 +1,13 @@
+lider da particao 0 pronto (recuperacao em 127.0.0.1:7000)
+HEARTBEAT: hb=1 n=0 ultimoSeq=0
+HEARTBEAT: hb=2 n=0 ultimoSeq=0
+EVENTO: seq=1 L=1 V=1,0,0
+EVENTO: seq=2 L=2 V=2,0,0
+HEARTBEAT: hb=3 n=2 ultimoSeq=2
+HEARTBEAT: hb=4 n=0 ultimoSeq=2
+EVENTO: seq=3 L=3 V=3,0,0
+lider da particao 0 pronto (recuperacao em 127.0.0.1:7000)
+RECUPERACAO: 3..3 para /127.0.0.1:61708 (1 registos)
+RECUPERACAO: 3..3 para /127.0.0.1:61709 (1 registos)
+HEARTBEAT: hb=1 n=0 ultimoSeq=3
+HEARTBEAT: hb=2 n=0 ultimoSeq=3

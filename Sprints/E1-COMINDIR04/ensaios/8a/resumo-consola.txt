@@ -1,0 +1,5 @@
+publicado=3
+alarmes=0
+validation_ignored=0
+erros_hb=0
+rejeitados=0

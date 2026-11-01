@@ -1,0 +1,25 @@
+HeartbeatCheck
+p0: lotes=6 vazios=5 (0.833) registos/lote=0.333 max=2 intervalo_ms=4897.500 max=5004
+  inc=1793556852496 lotes=2 vazios=1.000 registos/lote=0.000 max=0 intervalo_ms=4855.000 max=4855
+  inc=1793556819283 lotes=4 vazios=0.750 registos/lote=0.500 max=2 intervalo_ms=4911.667 max=5004
+  bytes/registo: LOTE=52.500 REG-equivalente=51.000
+p1: lotes=9 vazios=9 (1.000) registos/lote=0.000 max=0 intervalo_ms=4963.125 max=5006
+  inc=1793556819292 lotes=9 vazios=1.000 registos/lote=0.000 max=0 intervalo_ms=4963.125 max=5006
+  bytes/registo: LOTE=0.000 REG-equivalente=0.000
+p2: lotes=9 vazios=9 (1.000) registos/lote=0.000 max=0 intervalo_ms=4962.875 max=5011
+  inc=1793556819316 lotes=9 vazios=1.000 registos/lote=0.000 max=0 intervalo_ms=4962.875 max=5011
+  bytes/registo: LOTE=0.000 REG-equivalente=0.000
+Eventos: SUSPEITA=4 RETOMA=4 REINICIO=4 HB_PERDIDO=0 RECUPERACAO=2
+  real p0 participante=produtor silencio_detetor_ms=15396 silencio_desde_publicado_ms=15402
+  real p0 participante=processador silencio_detetor_ms=15420 silencio_desde_publicado_ms=15425
+  real p0 participante=replica1 silencio_detetor_ms=15613 silencio_desde_publicado_ms=15617
+  real p0 participante=replica3 silencio_detetor_ms=15659 silencio_desde_publicado_ms=15664
+Suspeitas: reais=4 falsas=0 antes_do_primeiro_heartbeat=0
+p0: latência_lote_ms=2557.000 max=2569
+p1: latência_lote_ms=0.000 max=0
+p2: latência_lote_ms=0.000 max=0
+falha p0 instante=1793556834582 participante=produtor deteção_ms=15119
+falha p0 instante=1793556834582 participante=processador deteção_ms=15142
+falha p0 instante=1793556834582 participante=replica1 deteção_ms=15334
+falha p0 instante=1793556834582 participante=replica3 deteção_ms=15381
+Tempo de deteção_ms: min=15119 média=15244.0 max=15381

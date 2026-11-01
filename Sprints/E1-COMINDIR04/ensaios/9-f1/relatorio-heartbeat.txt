@@ -1,0 +1,39 @@
+HeartbeatCheck
+p0: lotes=1 vazios=0 (0.000) registos/lote=1.000 max=1 intervalo_ms=0.000 max=0
+  inc=1793557604439 lotes=1 vazios=0.000 registos/lote=1.000 max=1 intervalo_ms=0.000 max=0
+  bytes/registo: LOTE=72.000 REG-equivalente=51.000
+p1: lotes=1 vazios=0 (0.000) registos/lote=1.000 max=1 intervalo_ms=0.000 max=0
+  inc=1793557604778 lotes=1 vazios=0.000 registos/lote=1.000 max=1 intervalo_ms=0.000 max=0
+  bytes/registo: LOTE=72.000 REG-equivalente=51.000
+p2: lotes=1 vazios=0 (0.000) registos/lote=1.000 max=1 intervalo_ms=0.000 max=0
+  inc=1793557604599 lotes=1 vazios=0.000 registos/lote=1.000 max=1 intervalo_ms=0.000 max=0
+  bytes/registo: LOTE=72.000 REG-equivalente=51.000
+Eventos: SUSPEITA=24 RETOMA=12 REINICIO=0 HB_PERDIDO=0 RECUPERACAO=0
+  inicial p0 participante=replica1 silencio_detetor_ms=15127 silencio_desde_publicado_ms=?
+  inicial p1 participante=replica1 silencio_detetor_ms=15128 silencio_desde_publicado_ms=?
+  inicial p1 participante=replica2 silencio_detetor_ms=15114 silencio_desde_publicado_ms=?
+  inicial p2 participante=replica2 silencio_detetor_ms=15119 silencio_desde_publicado_ms=?
+  inicial p2 participante=replica3 silencio_detetor_ms=15140 silencio_desde_publicado_ms=?
+  inicial p0 participante=replica3 silencio_detetor_ms=15143 silencio_desde_publicado_ms=?
+  inicial p0 participante=processador silencio_detetor_ms=15016 silencio_desde_publicado_ms=?
+  inicial p1 participante=processador silencio_detetor_ms=15025 silencio_desde_publicado_ms=?
+  inicial p2 participante=processador silencio_detetor_ms=15025 silencio_desde_publicado_ms=?
+  inicial p0 participante=produtor silencio_detetor_ms=15130 silencio_desde_publicado_ms=?
+  inicial p1 participante=produtor silencio_detetor_ms=15124 silencio_desde_publicado_ms=?
+  inicial p2 participante=produtor silencio_detetor_ms=15124 silencio_desde_publicado_ms=?
+  real p0 participante=processador silencio_detetor_ms=15073 silencio_desde_publicado_ms=15325
+  real p2 participante=processador silencio_detetor_ms=15131 silencio_desde_publicado_ms=15202
+  real p0 participante=produtor silencio_detetor_ms=15210 silencio_desde_publicado_ms=15479
+  real p1 participante=produtor silencio_detetor_ms=15038 silencio_desde_publicado_ms=15025
+  real p2 participante=produtor silencio_detetor_ms=15211 silencio_desde_publicado_ms=15361
+  real p0 participante=replica1 silencio_detetor_ms=15477 silencio_desde_publicado_ms=15730
+  real p1 participante=replica1 silencio_detetor_ms=15278 silencio_desde_publicado_ms=15278
+  real p1 participante=replica2 silencio_detetor_ms=15299 silencio_desde_publicado_ms=15290
+  real p2 participante=replica2 silencio_detetor_ms=15469 silencio_desde_publicado_ms=15628
+  real p2 participante=replica3 silencio_detetor_ms=15660 silencio_desde_publicado_ms=15682
+  real p0 participante=replica3 silencio_detetor_ms=15712 silencio_desde_publicado_ms=15810
+  real p1 participante=processador silencio_detetor_ms=15817 silencio_desde_publicado_ms=15867
+Suspeitas: reais=12 falsas=0 antes_do_primeiro_heartbeat=12
+p0: latência_lote_ms=4657.750 max=4691
+p1: latência_lote_ms=4847.250 max=4901
+p2: latência_lote_ms=4609.250 max=4668

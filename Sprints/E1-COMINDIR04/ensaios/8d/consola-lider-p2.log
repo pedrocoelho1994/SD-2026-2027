@@ -1,0 +1,17 @@
+lider da particao 2 pronto (recuperacao em 127.0.0.1:7002)
+HEARTBEAT: hb=1 n=0 ultimoSeq=0
+HEARTBEAT: hb=2 n=0 ultimoSeq=0
+HEARTBEAT: hb=3 n=0 ultimoSeq=0
+EVENTO: seq=1 L=1 V=0,0,1
+EVENTO: seq=2 L=2 V=0,0,2
+EVENTO: seq=3 L=3 V=0,0,3
+EVENTO: seq=4 L=4 V=0,0,4
+EVENTO: seq=5 L=5 V=0,0,5
+HEARTBEAT: hb=4 n=5 ultimoSeq=5
+HEARTBEAT: hb=5 n=0 ultimoSeq=5
+HEARTBEAT: hb=6 n=0 ultimoSeq=5
+HEARTBEAT: hb=7 n=0 ultimoSeq=5
+HEARTBEAT: hb=8 n=0 ultimoSeq=5
+HEARTBEAT: hb=9 n=0 ultimoSeq=5
+HEARTBEAT: hb=10 n=0 ultimoSeq=5
+HEARTBEAT: hb=11 n=0 ultimoSeq=5

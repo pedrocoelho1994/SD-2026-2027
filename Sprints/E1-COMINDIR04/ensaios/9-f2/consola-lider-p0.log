@@ -1,0 +1,17 @@
+lider da particao 0 pronto (recuperacao em 127.0.0.1:7000)
+HEARTBEAT: hb=1 n=0 ultimoSeq=0
+HEARTBEAT: hb=2 n=0 ultimoSeq=0
+REJEITADO: IN;S01;23.0;0;0,0,0 (V[0] != seq)
+REJEITADO: IN;S04;16.7;0;0,0,0 (V[0] != seq)
+REJEITADO: IN;S04;29.1;0;0,0,0 (V[0] != seq)
+REJEITADO: IN;S10;26.5;0;0,0,0 (V[0] != seq)
+REJEITADO: IN;S01;22.1;0;0,0,0 (V[0] != seq)
+REJEITADO: IN;S10;21.6;0;0,0,0 (V[0] != seq)
+REJEITADO: IN;S10;20.9;0;0,0,0 (V[0] != seq)
+REJEITADO: IN;S01;20.3;0;0,0,0 (V[0] != seq)
+REJEITADO: IN;S04;16.2;0;0,0,0 (V[0] != seq)
+REJEITADO: IN;S07;25.7;0;0,0,0 (V[0] != seq)
+REJEITADO: IN;S07;21.3;0;0,0,0 (V[0] != seq)
+HEARTBEAT: hb=3 n=0 ultimoSeq=0
+HEARTBEAT: hb=4 n=0 ultimoSeq=0
+HEARTBEAT: hb=5 n=0 ultimoSeq=0

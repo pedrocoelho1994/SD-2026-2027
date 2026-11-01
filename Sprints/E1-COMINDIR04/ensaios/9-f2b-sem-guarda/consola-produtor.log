@@ -1,0 +1,49 @@
+Produtor pronto (API: http://127.0.0.1:5001/api/v0, 3 particoes).
+Formato: <sensor> <temperatura> | 'rajada <n> <s>' | 'rajada-quente <n> <s>' | 'sair'
+> MONITOR: RECEBIDO;p2;inc=1793557717848;hb=2;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557718213;hb=2;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557718112;hb=2;ultimoSeq=0;n=0;de=-1;ate=-1
+Publicado: IN;S05;24.2;0;0,0,0 -> p1
+Publicado: IN;S05;21.7;0;0,0,0 -> p1
+Publicado: IN;S04;27.5;0;0,0,0 -> p0
+Publicado: IN;S01;23.6;0;0,0,0 -> p0
+Publicado: IN;S07;18.5;0;0,0,0 -> p0
+Publicado: IN;S07;19.3;0;0,0,0 -> p0
+Publicado: IN;S04;22.5;0;0,0,0 -> p0
+Publicado: IN;S04;19.7;0;0,0,0 -> p0
+Publicado: IN;S08;17.7;0;0,0,0 -> p1
+Publicado: IN;S05;25.2;0;0,0,0 -> p1
+Publicado: IN;S07;25.3;0;0,0,0 -> p0
+Publicado: IN;S07;18.8;0;0,0,0 -> p0
+Publicado: IN;S01;26.0;0;0,0,0 -> p0
+Publicado: IN;S04;22.1;0;0,0,0 -> p0
+Publicado: IN;S07;21.3;0;0,0,0 -> p0
+Publicado: IN;S07;15.2;0;0,0,0 -> p0
+Publicado: IN;S01;17.0;0;0,0,0 -> p0
+Publicado: IN;S08;25.8;0;0,0,0 -> p1
+Publicado: IN;S03;16.2;0;0,0,0 -> p2
+Publicado: IN;S03;17.4;0;0,0,0 -> p2
+Publicado: IN;S04;23.2;0;0,0,0 -> p0
+Publicado: IN;S07;24.9;0;0,0,0 -> p0
+Publicado: IN;S03;20.4;0;0,0,0 -> p2
+Publicado: IN;S03;28.4;0;0,0,0 -> p2
+Publicado: IN;S06;28.4;0;0,0,0 -> p2
+Publicado: IN;S01;22.7;0;0,0,0 -> p0
+Publicado: IN;S08;24.2;0;0,0,0 -> p1
+Publicado: IN;S02;27.7;0;0,0,0 -> p1
+Publicado: IN;S05;17.5;0;0,0,0 -> p1
+Publicado: IN;S06;27.4;0;0,0,0 -> p2
+Rajada concluida: 30 leituras.
+p0: 16 leituras
+p1: 8 leituras
+p2: 6 leituras
+Primeira: 1793557726303 ms | ultima: 1793557726531 ms | Duracao: 228 ms
+> MONITOR: RECEBIDO;p2;inc=1793557717848;hb=3;ultimoSeq=6;n=6;de=1;ate=6
+MONITOR: RECEBIDO;p1;inc=1793557718112;hb=3;ultimoSeq=8;n=8;de=1;ate=8
+MONITOR: RECEBIDO;p0;inc=1793557718213;hb=3;ultimoSeq=18;n=18;de=1;ate=18
+MONITOR: RECEBIDO;p2;inc=1793557717848;hb=4;ultimoSeq=6;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557718112;hb=4;ultimoSeq=8;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557718213;hb=4;ultimoSeq=18;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793557717848;hb=5;ultimoSeq=6;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557718112;hb=5;ultimoSeq=8;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557718213;hb=5;ultimoSeq=18;n=0;de=-1;ate=-1

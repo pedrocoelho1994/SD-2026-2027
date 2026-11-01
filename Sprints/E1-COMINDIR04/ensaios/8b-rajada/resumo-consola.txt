@@ -1,0 +1,9 @@
+publicado=300
+p0: 114 leituras
+p1: 97 leituras
+p2: 89 leituras
+Primeira: 1793556869923 ms | ultima: 1793556871186 ms | Duracao: 1263 ms
+alarmes=31
+validation_ignored=0
+erros_hb=0
+rejeitados=0

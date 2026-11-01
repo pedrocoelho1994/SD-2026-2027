@@ -1,0 +1,20 @@
+Produtor pronto (API: http://127.0.0.1:5001/api/v0, 3 particoes).
+Formato: <sensor> <temperatura> | 'rajada <n> <s>' | 'rajada-quente <n> <s>' | 'sair'
+> MONITOR: SUSPEITA;p0;silencio_ms=15130
+MONITOR: SUSPEITA;p1;silencio_ms=15124
+MONITOR: SUSPEITA;p2;silencio_ms=15124
+AVISO: líder p0 suspeito; leitura S01 pode perder-se
+Publicado: IN;S01;21.0;0;0,0,0 -> p0
+> AVISO: líder p1 suspeito; leitura S02 pode perder-se
+Publicado: IN;S02;21.0;0;0,0,0 -> p1
+> AVISO: líder p2 suspeito; leitura S03 pode perder-se
+Publicado: IN;S03;21.0;0;0,0,0 -> p2
+> MONITOR: RETOMA;p0;inc=1793557604439;hb=1
+MONITOR: RETOMA;p2;inc=1793557604599;hb=1
+MONITOR: RECEBIDO;p0;inc=1793557604439;hb=1;ultimoSeq=1;n=1;de=1;ate=1
+MONITOR: RECEBIDO;p2;inc=1793557604599;hb=1;ultimoSeq=1;n=1;de=1;ate=1
+MONITOR: RETOMA;p1;inc=1793557604778;hb=1
+MONITOR: RECEBIDO;p1;inc=1793557604778;hb=1;ultimoSeq=1;n=1;de=1;ate=1
+MONITOR: SUSPEITA;p0;silencio_ms=15210
+MONITOR: SUSPEITA;p1;silencio_ms=15038
+MONITOR: SUSPEITA;p2;silencio_ms=15211

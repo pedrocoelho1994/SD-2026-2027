@@ -1,0 +1,15 @@
+replica 2 ligada a http://127.0.0.1:5001/api/v0 com as particoes 1,2 (perda=0.0, descartar=nenhum)
+particao 2: ultimo seq em ficheiro: 0
+particao 1: ultimo seq em ficheiro: 0
+MONITOR: RECEBIDO;p1;inc=1793558678133;hb=1;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558678153;hb=1;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558678133;hb=2;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558678153;hb=2;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558678133;hb=3;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558678153;hb=3;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558678133;hb=4;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558678153;hb=4;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558678133;hb=5;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558678153;hb=5;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558678133;hb=6;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558678153;hb=6;ultimoSeq=0;n=0;de=-1;ate=-1

@@ -1,0 +1,140 @@
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=2;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558188814;hb=2;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=2;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=3;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558188814;hb=3;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=3;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=4;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558188814;hb=4;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=4;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=5;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558188814;hb=5;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=5;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=6;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558188814;hb=6;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=6;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=7;ultimoSeq=40;n=40;de=1;ate=40
+MONITOR: RECEBIDO;p1;inc=1793558188814;hb=7;ultimoSeq=32;n=32;de=1;ate=32
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=7;ultimoSeq=41;n=41;de=1;ate=41
+ALARME: S07 p0#25 -> p1
+ALARME: S08 p1#6 -> p2
+ALARME: S05 p1#8 -> p2
+ALARME: S08 p1#19 -> p2
+ALARME: S02 p1#31 -> p2
+ALARME: S10 p0#38 -> p1
+ALARME: S09 p2#20 -> p0
+ALARME: S03 p2#32 -> p0
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=8;ultimoSeq=121;n=81;de=41;ate=121
+ALARME: S01 p0#46 -> p1
+ALARME: S01 p0#53 -> p1
+ALARME: S07 p0#61 -> p1
+ALARME: S10 p0#66 -> p1
+ALARME: S07 p0#67 -> p1
+ALARME: S10 p0#69 -> p1
+ALARME: S04 p0#72 -> p1
+ALARME: S10 p0#73 -> p1
+ALARME: S10 p0#76 -> p1
+ALARME: S01 p0#81 -> p1
+ALARME: S04 p0#84 -> p1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=8;ultimoSeq=98;n=57;de=42;ate=98
+ALARME: S01 p0#87 -> p1
+ALARME: S10 p0#89 -> p1
+ALARME: S07 p0#109 -> p1
+ALARME: S06 p2#61 -> p0
+ALARME: S09 p2#65 -> p0
+ALARME: S03 p2#73 -> p0
+ALARME: S06 p2#77 -> p0
+ALARME: S09 p2#85 -> p0
+ALARME: S06 p2#91 -> p0
+ALARME: S03 p2#98 -> p0
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=9;ultimoSeq=128;n=7;de=122;ate=128
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=9;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=10;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=10;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: SUSPEITA;p1;silencio_ms=3393
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=11;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=11;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=12;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=12;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=13;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=13;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=14;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=14;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=15;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=15;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=16;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=16;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=17;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=17;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=18;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=18;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=19;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=19;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=20;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=20;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=21;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=21;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=22;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=22;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=23;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=23;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=24;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=24;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=25;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=25;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=26;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=26;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=27;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=27;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=28;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=28;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=29;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=29;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=30;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=30;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=31;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=31;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=32;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=32;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=33;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=33;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=34;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=34;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=35;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=35;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=36;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=36;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=37;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=37;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=38;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=38;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: REINICIO;p1;inc=1793558188814->1793558226036
+MONITOR: RETOMA;p1;inc=1793558226036;hb=1
+MONITOR: RECEBIDO;p1;inc=1793558226036;hb=1;ultimoSeq=44;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=39;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=39;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558226036;hb=2;ultimoSeq=44;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=40;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=40;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558226036;hb=3;ultimoSeq=44;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=41;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=41;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558226036;hb=4;ultimoSeq=44;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=42;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=42;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558226036;hb=5;ultimoSeq=44;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=43;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=43;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558226036;hb=6;ultimoSeq=44;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=44;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=44;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558226036;hb=7;ultimoSeq=44;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=45;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=45;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558226036;hb=8;ultimoSeq=44;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=46;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=46;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558226036;hb=9;ultimoSeq=44;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793558188810;hb=47;ultimoSeq=128;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793558188837;hb=47;ultimoSeq=98;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793558226036;hb=10;ultimoSeq=44;n=0;de=-1;ate=-1

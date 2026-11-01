@@ -1,0 +1,19 @@
+HeartbeatCheck
+p0: lotes=11 vazios=11 (1.000) registos/lote=0.000 max=0 intervalo_ms=4971.300 max=5002
+  inc=1793557098961 lotes=11 vazios=1.000 registos/lote=0.000 max=0 intervalo_ms=4971.300 max=5002
+  bytes/registo: LOTE=0.000 REG-equivalente=0.000
+p1: lotes=11 vazios=11 (1.000) registos/lote=0.000 max=0 intervalo_ms=4970.600 max=5002
+  inc=1793557098975 lotes=11 vazios=1.000 registos/lote=0.000 max=0 intervalo_ms=4970.600 max=5002
+  bytes/registo: LOTE=0.000 REG-equivalente=0.000
+p2: lotes=11 vazios=10 (0.909) registos/lote=0.455 max=5 intervalo_ms=4969.600 max=25557
+  inc=1793557098992 lotes=11 vazios=0.909 registos/lote=0.455 max=5 intervalo_ms=4969.600 max=25557
+  bytes/registo: LOTE=40.800 REG-equivalente=51.000
+Eventos: SUSPEITA=4 RETOMA=4 REINICIO=0 HB_PERDIDO=0 RECUPERACAO=0
+  falsa p2 participante=produtor silencio_detetor_ms=15114 silencio_desde_publicado_ms=15119
+  falsa p2 participante=processador silencio_detetor_ms=15380 silencio_desde_publicado_ms=15384
+  falsa p2 participante=replica2 silencio_detetor_ms=15487 silencio_desde_publicado_ms=15488
+  falsa p2 participante=replica3 silencio_detetor_ms=15505 silencio_desde_publicado_ms=15505
+Suspeitas: reais=0 falsas=4 antes_do_primeiro_heartbeat=0
+p0: latência_lote_ms=0.000 max=0
+p1: latência_lote_ms=0.000 max=0
+p2: latência_lote_ms=1631.350 max=1654

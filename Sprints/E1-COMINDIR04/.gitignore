@@ -1,0 +1,13 @@
+# Compilação
+out/
+bin/
+*.class
+
+# Ficheiros gerados em execução (os resultados dos ensaios ficam em ensaios/)
+/rep04-*/lider-p*.txt
+/rep04-*/hb-p*.txt
+/rep04-*/replica-*.txt
+/rep04-*/replica-*.lock
+/rep04-*/monitor-*.txt
+/rep04-*/relatorio-heartbeat.txt
+/rep04-*/falhas.txt
