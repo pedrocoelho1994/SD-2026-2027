@@ -1,0 +1,9 @@
+Registos: 3
+V[k] = seq invalidos: 0
+Pares causais: 0
+  a -> b: 0
+  b -> a: 0
+Pares concorrentes: 3
+Pares iguais: 0
+Violacoes de Lamport: 0
+Concorrentes com L distinto: 0 (0.0%)

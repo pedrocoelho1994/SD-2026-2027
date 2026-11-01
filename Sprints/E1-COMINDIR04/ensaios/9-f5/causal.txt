@@ -1,0 +1,9 @@
+Registos: 345
+V[k] = seq invalidos: 0
+Pares causais: 4206
+  a -> b: 1564
+  b -> a: 2642
+Pares concorrentes: 35168
+Pares iguais: 0
+Violacoes de Lamport: 0
+Concorrentes com L distinto: 34857 (99.11567333939945%)

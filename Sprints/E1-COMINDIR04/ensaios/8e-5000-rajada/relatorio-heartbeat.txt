@@ -1,0 +1,15 @@
+HeartbeatCheck
+p0: lotes=5 vazios=2 (0.400) registos/lote=26.800 max=79 intervalo_ms=4929.750 max=5000
+  inc=1793557287334 lotes=5 vazios=0.400 registos/lote=26.800 max=79 intervalo_ms=4929.750 max=5000
+  bytes/registo: LOTE=38.896 REG-equivalente=55.970
+p1: lotes=5 vazios=2 (0.400) registos/lote=19.400 max=53 intervalo_ms=4939.500 max=5006
+  inc=1793557287334 lotes=5 vazios=0.400 registos/lote=19.400 max=53 intervalo_ms=4939.500 max=5006
+  bytes/registo: LOTE=38.330 REG-equivalente=55.072
+p2: lotes=5 vazios=2 (0.400) registos/lote=20.400 max=55 intervalo_ms=4925.250 max=4998
+  inc=1793557287350 lotes=5 vazios=0.400 registos/lote=20.400 max=55 intervalo_ms=4925.250 max=4998
+  bytes/registo: LOTE=38.314 REG-equivalente=55.108
+Eventos: SUSPEITA=0 RETOMA=0 REINICIO=0 HB_PERDIDO=0 RECUPERACAO=0
+Suspeitas: reais=0 falsas=0 antes_do_primeiro_heartbeat=0
+p0: latência_lote_ms=2900.243 max=5004
+p1: latência_lote_ms=2977.590 max=5013
+p2: latência_lote_ms=2768.500 max=4970

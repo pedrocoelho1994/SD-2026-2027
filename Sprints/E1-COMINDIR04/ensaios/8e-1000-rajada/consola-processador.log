@@ -1,0 +1,71 @@
+MONITOR: RECEBIDO;p0;inc=1793557153437;hb=2;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557153473;hb=2;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793557153477;hb=2;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557153437;hb=3;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557153473;hb=3;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793557153477;hb=3;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557153437;hb=4;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557153473;hb=4;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793557153477;hb=4;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557153437;hb=5;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557153473;hb=5;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793557153477;hb=5;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557153437;hb=6;ultimoSeq=39;n=39;de=1;ate=39
+MONITOR: RECEBIDO;p1;inc=1793557153473;hb=6;ultimoSeq=37;n=37;de=1;ate=37
+MONITOR: RECEBIDO;p2;inc=1793557153477;hb=6;ultimoSeq=40;n=40;de=1;ate=40
+ALARME: S04 p0#7 -> p1
+ALARME: S01 p0#15 -> p1
+ALARME: S01 p0#21 -> p1
+ALARME: S01 p0#25 -> p1
+ALARME: S04 p0#33 -> p1
+ALARME: S08 p1#8 -> p2
+ALARME: S08 p1#9 -> p2
+ALARME: S08 p1#10 -> p2
+ALARME: S05 p1#15 -> p2
+ALARME: S02 p1#19 -> p2
+ALARME: S02 p1#20 -> p2
+ALARME: S02 p1#33 -> p2
+ALARME: S06 p2#2 -> p0
+ALARME: S03 p2#11 -> p0
+ALARME: S06 p2#12 -> p0
+ALARME: S09 p2#16 -> p0
+ALARME: S03 p2#18 -> p0
+ALARME: S09 p2#29 -> p0
+ALARME: S09 p2#34 -> p0
+MONITOR: RECEBIDO;p0;inc=1793557153437;hb=7;ultimoSeq=107;n=68;de=40;ate=107
+ALARME: S04 p0#51 -> p1
+ALARME: S07 p0#71 -> p1
+ALARME: S10 p0#82 -> p1
+MONITOR: RECEBIDO;p2;inc=1793557153477;hb=7;ultimoSeq=107;n=67;de=41;ate=107
+ALARME: S03 p2#53 -> p0
+ALARME: S06 p2#56 -> p0
+MONITOR: RECEBIDO;p1;inc=1793557153473;hb=7;ultimoSeq=105;n=68;de=38;ate=105
+ALARME: S06 p2#65 -> p0
+ALARME: S09 p2#67 -> p0
+ALARME: S09 p2#88 -> p0
+ALARME: S03 p2#91 -> p0
+ALARME: S09 p2#99 -> p0
+ALARME: S06 p2#100 -> p0
+ALARME: S08 p1#50 -> p2
+ALARME: S08 p1#77 -> p2
+ALARME: S08 p1#81 -> p2
+ALARME: S05 p1#84 -> p2
+ALARME: S05 p1#88 -> p2
+ALARME: S02 p1#91 -> p2
+ALARME: S02 p1#92 -> p2
+ALARME: S08 p1#101 -> p2
+MONITOR: RECEBIDO;p0;inc=1793557153437;hb=8;ultimoSeq=115;n=8;de=108;ate=115
+MONITOR: RECEBIDO;p1;inc=1793557153473;hb=8;ultimoSeq=105;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793557153477;hb=8;ultimoSeq=118;n=11;de=108;ate=118
+MONITOR: RECEBIDO;p0;inc=1793557153437;hb=9;ultimoSeq=115;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557153473;hb=9;ultimoSeq=105;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793557153477;hb=9;ultimoSeq=118;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557153437;hb=10;ultimoSeq=115;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557153473;hb=10;ultimoSeq=105;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793557153477;hb=10;ultimoSeq=118;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557153437;hb=11;ultimoSeq=115;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557153473;hb=11;ultimoSeq=105;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793557153477;hb=11;ultimoSeq=118;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557153437;hb=12;ultimoSeq=115;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557153473;hb=12;ultimoSeq=105;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p2;inc=1793557153477;hb=12;ultimoSeq=118;n=0;de=-1;ate=-1

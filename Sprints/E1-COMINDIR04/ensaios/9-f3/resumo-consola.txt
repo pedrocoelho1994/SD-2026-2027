@@ -1,0 +1,14 @@
+publicado=1800
+p0: 729 leituras
+p1: 528 leituras
+p2: 543 leituras
+Primeira: 1793557754470 ms | ultima: 1793557755771 ms | Duracao: 1301 ms
+Primeira: 1793557756987 ms | ultima: 1793557757776 ms | Duracao: 789 ms
+Primeira: 1793557759516 ms | ultima: 1793557760165 ms | Duracao: 649 ms
+Primeira: 1793557762086 ms | ultima: 1793557762756 ms | Duracao: 670 ms
+Primeira: 1793557764608 ms | ultima: 1793557765266 ms | Duracao: 658 ms
+Primeira: 1793557767182 ms | ultima: 1793557767554 ms | Duracao: 372 ms
+alarmes=235
+validation_ignored=0
+erros_hb=0
+rejeitados=0

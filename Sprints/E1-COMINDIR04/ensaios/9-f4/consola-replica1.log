@@ -1,0 +1,141 @@
+replica 1 ligada a http://127.0.0.1:5001/api/v0 com as particoes 0,1 (perda=0.0, descartar=nenhum)
+particao 0: ultimo seq em ficheiro: 0
+particao 1: ultimo seq em ficheiro: 0
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=1;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=1;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=2;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=2;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=3;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=3;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=4;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=4;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=5;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=5;ultimoSeq=0;n=1;de=1;ate=1
+Aplicado: 1;S02;19.5;1793557820601;1;0,1,0
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=6;ultimoSeq=0;n=1;de=1;ate=1
+Aplicado: 1;S04;21.5;1793557821709;1;1,0,0
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=6;ultimoSeq=0;n=1;de=2;ate=2
+Aplicado: 2;S05;22.5;1793557822274;2;0,2,0
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=7;ultimoSeq=0;n=1;de=2;ate=2
+Aplicado: 2;S07;24.5;1793557823348;2;2,0,0
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=7;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=8;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=8;ultimoSeq=0;n=1;de=3;ate=3
+Aplicado: 3;S08;25.5;1793557823915;3;0,3,0
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=9;ultimoSeq=0;n=1;de=3;ate=3
+Aplicado: 3;S01;19.5;1793557824988;3;3,0,0
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=9;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: HB_PERDIDO;p0;esperado=10;recebido=11
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=11;ultimoSeq=0;n=1;de=4;ate=4
+Aplicado: 4;S04;22.5;1793557826635;4;4,0,0
+MONITOR: HB_PERDIDO;p1;esperado=10;recebido=11
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=11;ultimoSeq=0;n=1;de=5;ate=5
+EM ESPERA: 5 (falta o registo 4)
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=12;ultimoSeq=0;n=1;de=5;ate=5
+Aplicado: 5;S07;25.5;1793557828276;5;5,0,0
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=12;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=13;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=13;ultimoSeq=0;n=1;de=6;ate=6
+EM ESPERA: 6 (falta o registo 4)
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=14;ultimoSeq=0;n=1;de=6;ate=6
+Aplicado: 6;S01;20.5;1793557829977;6;6,0,0
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=14;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=15;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=15;ultimoSeq=0;n=1;de=7;ate=7
+EM ESPERA: 7 (falta o registo 4)
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=16;ultimoSeq=0;n=1;de=7;ate=7
+Aplicado: 7;S04;23.5;1793557831555;7;7,0,0
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=16;ultimoSeq=0;n=1;de=8;ate=8
+EM ESPERA: 8 (falta o registo 4)
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=17;ultimoSeq=0;n=1;de=8;ate=8
+Aplicado: 8;S07;18.5;1793557833203;8;8,0,0
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=17;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=18;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=18;ultimoSeq=0;n=1;de=9;ate=9
+EM ESPERA: 9 (falta o registo 4)
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=19;ultimoSeq=0;n=1;de=9;ate=9
+Aplicado: 9;S01;21.5;1793557834854;9;9,0,0
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=19;ultimoSeq=0;n=1;de=10;ate=10
+EM ESPERA: 10 (falta o registo 4)
+MONITOR: HB_PERDIDO;p0;esperado=20;recebido=21
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=21;ultimoSeq=0;n=1;de=10;ate=10
+MONITOR: HB_PERDIDO;p1;esperado=20;recebido=21
+Aplicado: 10;S04;24.5;1793557836441;10;10,0,0
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=21;ultimoSeq=0;n=1;de=11;ate=11
+EM ESPERA: 11 (falta o registo 4)
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=22;ultimoSeq=0;n=1;de=11;ate=11
+Aplicado: 11;S07;19.5;1793557838035;11;11,0,0
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=22;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=23;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=23;ultimoSeq=0;n=1;de=12;ate=12
+EM ESPERA: 12 (falta o registo 4)
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=24;ultimoSeq=0;n=1;de=12;ate=12
+Aplicado: 12;S01;22.5;1793557839635;12;12,0,0
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=24;ultimoSeq=0;n=1;de=13;ate=13
+EM ESPERA: 13 (falta o registo 4)
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=25;ultimoSeq=0;n=1;de=13;ate=13
+Aplicado: 13;S04;25.5;1793557841217;13;13,0,0
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=25;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=26;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=26;ultimoSeq=0;n=1;de=14;ate=14
+EM ESPERA: 14 (falta o registo 4)
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=27;ultimoSeq=0;n=1;de=14;ate=14
+Aplicado: 14;S07;20.5;1793557842872;14;14,0,0
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=27;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=28;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=28;ultimoSeq=0;n=1;de=15;ate=15
+EM ESPERA: 15 (falta o registo 4)
+RECUPERACAO: 4..4 pedida a 127.0.0.1:7001
+MONITOR: RECUPERACAO;p1;de=4;ate=4
+RECUPERADO: 4
+Aplicado (que estava retido): 5;S05;23.5;1793557827199;5;0,5,0
+Aplicado (que estava retido): 6;S08;18.5;1793557828840;6;0,6,0
+Aplicado (que estava retido): 7;S02;21.5;1793557830484;7;0,7,0
+Aplicado (que estava retido): 8;S05;24.5;1793557832121;8;0,8,0
+Aplicado (que estava retido): 9;S08;19.5;1793557833775;9;0,9,0
+Aplicado (que estava retido): 10;S02;22.5;1793557835359;10;0,10,0
+Aplicado (que estava retido): 11;S05;25.5;1793557837011;11;0,11,0
+Aplicado (que estava retido): 12;S08;20.5;1793557838547;12;0,12,0
+Aplicado (que estava retido): 13;S02;23.5;1793557840133;13;0,13,0
+Aplicado (que estava retido): 14;S05;18.5;1793557841790;14;0,14,0
+Aplicado (que estava retido): 15;S08;21.5;1793557843385;15;0,15,0
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=29;ultimoSeq=0;n=1;de=15;ate=15
+Aplicado: 15;S01;23.5;1793557844460;15;15,0,0
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=29;ultimoSeq=0;n=1;de=16;ate=16
+Aplicado: 16;S02;24.5;1793557845017;16;0,16,0
+MONITOR: HB_PERDIDO;p0;esperado=30;recebido=31
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=31;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: HB_PERDIDO;p1;esperado=30;recebido=31
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=31;ultimoSeq=0;n=1;de=17;ate=17
+Aplicado: 17;S05;19.5;1793557846664;17;0,17,0
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=32;ultimoSeq=0;n=1;de=17;ate=17
+EM ESPERA: 17 (falta o registo 16)
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=32;ultimoSeq=0;n=1;de=18;ate=18
+Aplicado: 18;S08;22.5;1793557848311;18;0,18,0
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=33;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=33;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=34;ultimoSeq=0;n=1;de=18;ate=18
+EM ESPERA: 18 (falta o registo 16)
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=34;ultimoSeq=0;n=1;de=19;ate=19
+Aplicado: 19;S02;25.5;1793557849893;19;0,19,0
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=35;ultimoSeq=0;n=1;de=19;ate=19
+EM ESPERA: 19 (falta o registo 16)
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=35;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=36;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=36;ultimoSeq=0;n=1;de=20;ate=20
+Aplicado: 20;S05;20.5;1793557851542;20;0,20,0
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=37;ultimoSeq=0;n=1;de=20;ate=20
+EM ESPERA: 20 (falta o registo 16)
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=37;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=38;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=38;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=39;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=39;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: HB_PERDIDO;p0;esperado=40;recebido=41
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=41;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: HB_PERDIDO;p1;esperado=40;recebido=41
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=41;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=42;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=42;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p0;inc=1793557817322;hb=43;ultimoSeq=0;n=0;de=-1;ate=-1
+MONITOR: RECEBIDO;p1;inc=1793557817339;hb=43;ultimoSeq=0;n=0;de=-1;ate=-1

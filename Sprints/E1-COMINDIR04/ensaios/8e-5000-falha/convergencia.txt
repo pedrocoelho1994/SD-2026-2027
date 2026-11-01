@@ -1,0 +1,9 @@
+lider-p0.txt linhas=128 md5=70186f16
+replica-1-p0.txt linhas=128 md5=70186f16
+replica-3-p0.txt linhas=128 md5=70186f16
+lider-p1.txt linhas=43 md5=b7e36b0b
+replica-1-p1.txt linhas=43 md5=b7e36b0b
+replica-2-p1.txt linhas=43 md5=b7e36b0b
+lider-p2.txt linhas=92 md5=7d6c6efd
+replica-2-p2.txt linhas=92 md5=7d6c6efd
+replica-3-p2.txt linhas=92 md5=7d6c6efd

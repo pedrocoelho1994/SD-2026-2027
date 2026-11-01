@@ -1,0 +1,9 @@
+lider-p0.txt linhas=133 md5=afcf2279
+replica-1-p0.txt linhas=133 md5=afcf2279
+replica-3-p0.txt linhas=133 md5=afcf2279
+lider-p1.txt linhas=118 md5=5f002be7
+replica-1-p1.txt linhas=118 md5=5f002be7
+replica-2-p1.txt linhas=118 md5=5f002be7
+lider-p2.txt linhas=101 md5=259ce89a
+replica-2-p2.txt linhas=101 md5=259ce89a
+replica-3-p2.txt linhas=101 md5=259ce89a
