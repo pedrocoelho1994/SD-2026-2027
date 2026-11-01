@@ -109,6 +109,16 @@ flowchart LR
     C --> D["4. Réplicas<br/>aplicam + detetam falhas"]
     C --> E["5. Processador<br/>cria ALARM-*"]
     E --> F["6. Novo IN<br/>volta ao passo 2"]
+```
+
+---
+
+## 5. Versão do Kubo
+
+Usar o **Kubo 0.39.0**. A partir da 0.40, o nó rejeita publicações com número de sequência
+inferior ao máximo já visto (`validation ignored`). Nos testes com a 0.43.1, com vários
+processos a publicar pelo mesmo nó, uma dessas rejeições terminou o produtor a meio de uma
+rajada. Com a 0.39.0, nas mesmas condições, não houve rejeições.
 
     
 
