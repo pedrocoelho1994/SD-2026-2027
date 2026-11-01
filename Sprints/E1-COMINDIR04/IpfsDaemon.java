@@ -49,10 +49,25 @@ public class IpfsDaemon {
             return;
         }
 
-        Process node = new ProcessBuilder(EXECUTABLE, "daemon", "--init")
+        // O pubsub vem desativado por omissão no Kubo: sem isto, pub/sub falham neste nó.
+        Path repo = defaultRepo();
+        if (!Files.exists(repo.resolve("config"))) {
+            runIpfs(repo, "init");
+        }
+        runIpfs(repo, "config", "--bool", "Pubsub.Enabled", "true");
+
+        Process node = new ProcessBuilder(EXECUTABLE, "daemon")
                 .inheritIO()
                 .start();
         waitForApi(API_NODE_1, node, "primeiro nó");
+    }
+
+    /** Repositório do nó principal: IPFS_PATH, se definido, ou ~/.ipfs. */
+    private static Path defaultRepo() {
+        String explicit = System.getenv("IPFS_PATH");
+        return explicit != null && !explicit.isBlank()
+                ? Path.of(explicit)
+                : Path.of(System.getProperty("user.home"), ".ipfs");
     }
 
     /** Cria/configura o repositório independente e inicia a API 5002. */
