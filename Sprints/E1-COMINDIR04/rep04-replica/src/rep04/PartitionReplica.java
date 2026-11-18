@@ -1,5 +1,4 @@
 package rep04;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -165,9 +164,9 @@ public class PartitionReplica {
         private final String api;
         private final int k;
         private final RecordFile file;
-        private long ultimo;                                       // ultimo seq escrito
+        private long ultimo;                                                        // ultimo seq escrito
         private final TreeMap<Long, SensorRecord> retidos = new TreeMap<>();
-        private String hostLider;                                  // atualizado a cada LOTE recebido
+        private String hostLider;                                                   // atualizado a cada LOTE recebido
         private int portoLider;
         private final HeartbeatMonitor monitor;
         private final String monitorFile;
