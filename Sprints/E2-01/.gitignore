@@ -1,0 +1,14 @@
+# VS Code (contém o token) - é aqui estão os dados privados do bot, não partilhar! questões de segurança !!!!
+.vscode/
+
+# Maven
+target/
+
+# Java
+*.class
+*.log
+
+# Chaves e segredos
+master.key
+*.key
+.env
